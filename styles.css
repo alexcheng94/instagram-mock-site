@@ -1,0 +1,64 @@
+body{
+	background: #FAFAFA;
+}
+nav{
+	background: #fff;
+	border-bottom: 1px solid #E7E7E7;
+	height: 77px;
+}
+.wrapper{
+
+}
+.nav-container{
+	width: 68%;
+	height: 31px;
+	padding: 26px 40px;
+	margin: 0 auto;
+	position: relative;
+}
+
+ul.left-icons,
+ul.right-icons{
+	display: inline-block;
+	padding-left: 0px;
+	margin-top: -16px;
+	-webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start:0;
+}
+nav li{
+	display: inline-block;
+	list-style: none;
+}
+.left-icons{
+	float: left;
+}
+.right-icons{
+	display: inline-block;
+	float: right;
+}
+
+.main-icon{
+	margin: 0 8px;
+	height: 30px;
+}
+.secondary-icon{
+	padding-top: 4.5px; 
+	height: 22px;
+	margin-right: 15px;
+}
+.search{
+	display: inline-block;
+
+}
+.search input{
+	border: 1px solid #E7E7E7;
+	border-radius: 4px;
+	line-height: 1.6em;
+}
+.container{
+	width: 68%;
+	border:1px solid red;
+	height: 1000px;
+	margin: 20px auto;
+}

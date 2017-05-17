@@ -1,0 +1,41 @@
+body{
+	background: #FAFAFA;
+}
+header{
+	background: #fff;
+	border: 1px solid #E7E7E7;
+	height: 77px;
+}
+ul{
+	width: 66%;
+	height: 31px;
+	padding: 26px 40px;
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+	position: relative;
+}
+/*nav li{
+	display: inline-block;
+	list-style: none;
+}*/
+.options{
+	height: 22px;
+}
+.main-icon{
+	margin:auto 10px;
+	height: 30px;
+	z-index: 100;
+}
+.container{
+	border:1px solid red;
+	width: 66%;
+	height: 1000px;
+	margin: auto;
+
+}
+#font-icon{
+	/*bottom: 20px;*/
+	/*position: absolute;*/
+	/*bottom: -1px;*/
+}
