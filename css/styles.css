@@ -115,7 +115,7 @@ header{
 .drop-down{
 	width: 34px;
 	margin-left: 5px;
-	background: url('/img/util/drop.png'); 
+	background: url('./img/util/drop.png'); 
 	background-position:center;
 	background-repeat:no-repeat;
 }
