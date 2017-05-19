@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
 body{
 	background: #FAFAFA;
+	font-family: 'San Francisco', Helvetica, Arial, san-serif;
 }
+
+/*=========NAV========*/
 nav{
 	background: #fff;
 	border-bottom: 1px solid #E7E7E7;
@@ -55,13 +63,107 @@ nav li{
 }
 
 
-
+/*==========================================*/
 .container{
 	max-width: 935px;
-	margin: 50px auto;
+	margin: 0 auto;
 	border:1px solid red;
-	height: 1000px;
 }
+/*=====HEADER======*/
+header{
+	height: 230px;
+	display: flex;
+}
+.avi{
+	width: 32%;
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-around;
+}
+.avi img{
+	align-self: center;
+	border-radius: 50%;
+	width: 150px;
+}
+.info{
+	flex-grow: 2;
+	margin: auto;
+	width: 60%;
+}
+.row h1,
+.row li{
+	display: inline-block;
+}
+/*===FIRST ROW==*/
+.row h1{
+	font-weight: normal;
+}
+.button-main{
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid #DBDBDB;
+	display: inline-block;
+	vertical-align: middle;
+	background: rgba(0,0,0,0);
+	height: 27.2px;
+}
+.follow{
+	margin-left: 15px;
+	width: 111px;
+	font-size: 0.9em;
+}
+.drop-down{
+	width: 34px;
+	margin-left: 5px;
+	background: url('/img/util/drop.png'); 
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.etc{
+	border: none;
+	font-size: 0.8em;
+	margin-left: 5px;
+}
+/*====== SECOND ROW =========*/
+.row2{
+	padding-left: 0;
+}
+.row2 li{
+	padding-right: 35px;
+}
+.row2 strong{
+	padding-right: 5px;
+}
+.row3 a{
+	text-decoration-line:none;
+}
+/*===== MAIN CONTENT ======*/
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.content div{
+/*	width: 30%;*/
+	overflow: hidden;
+}
+.content img{
+	/*margin: 10px;*/
+	width: 293px;
+	height: 293px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
 	.main-icon{
