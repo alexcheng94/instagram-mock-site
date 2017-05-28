@@ -7,7 +7,6 @@ body{
 	background: #FAFAFA;
 	font-family: 'San Francisco', Helvetica, Arial, san-serif;
 }
-
 /*=========NAV========*/
 nav{
 	background: #fff;
@@ -61,18 +60,11 @@ nav li{
 	line-height: 1.6em;
 	text-align: center; 
 }
-
-
-/*==========================================*/
-.container{
-	max-width: 935px;
-	margin: 0 auto;
-	border:1px solid red;
-}
 /*=====HEADER======*/
 header{
 	height: 230px;
 	display: flex;
+	flex-wrap: wrap;
 }
 .avi{
 	width: 32%;
@@ -90,13 +82,16 @@ header{
 	margin: auto;
 	width: 60%;
 }
-.row h1,
-.row li{
+.h-row h1,
+.h-row li{
 	display: inline-block;
 }
 /*===FIRST ROW==*/
-.row h1{
+.h-row h1{
 	font-weight: normal;
+}
+.button-div{
+	display: inline-block;
 }
 .button-main{
 	cursor: pointer;
@@ -115,7 +110,7 @@ header{
 .drop-down{
 	width: 34px;
 	margin-left: 5px;
-	background: url('./img/util/drop.png'); 
+	background: url('../img/util/drop.png'); 
 	background-position:center;
 	background-repeat:no-repeat;
 }
@@ -125,55 +120,129 @@ header{
 	margin-left: 5px;
 }
 /*====== SECOND ROW =========*/
-.row2{
+.h-row2{
 	padding-left: 0;
 }
-.row2 li{
+.h-row2 li{
 	padding-right: 35px;
 }
-.row2 strong{
+.h-row2 strong{
 	padding-right: 5px;
 }
-.row3 a{
-	text-decoration-line:none;
+/*====== THIRD ROW =========*/
+.h-row3 a{
+	text-decoration: none;
 }
 /*===== MAIN CONTENT ======*/
+.container{
+	max-width: 945px;
+	margin: 0 auto;
+}
 .content{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	max-width: 935px;
+	position: relative;
+	margin: auto;
 }
-.content div{
-/*	width: 30%;*/
-	overflow: hidden;
+.row{
+	font-size: 0;
 }
-.content img{
-	/*margin: 10px;*/
-	width: 293px;
-	height: 293px;
+.row div{
+	display: inline-block;
+	margin-right: 28px;
+	margin-bottom: 28px;
+	width: 30vw;
+	height: 30vw;
+	max-width: 293px;
+	max-height: 293px;
+}
+.row div:last-child{
+	margin-right: 0;
+}
+.row img{
+	width: 100%;
+	height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
+/*=================MEDIA QUERIES=================*/
+@media (max-width: 727px) {
+	.row div{
+		margin-right: 3px;
+		margin-bottom: 3px;
+		width: 32vw;
+		height: 32vw;
+	}
 	.main-icon{
 		height: 24px;
 		padding-top: 2.5px;
 	}
 }
-
-@media (max-width: 590px) {
+@media (max-width: 568px) {
 	.search{
+		display: none;
+	}
+	.row div{
+		margin-right: 0px;
+		margin-bottom: 0px;
+		width: 32vw;
+		height: 32vw;
+	}
+	.button-div{
+		display: block;
+	}
+	.follow{
+		margin-left: 0;
+	}
+	.h-row2 li{
+		padding-right: 10px;
+	}
+}
+@media (max-width: 500px) {
+	header{
+		height: 260px;
+	}
+	.avi{
+		margin-top: -130px;
+		width: 30%;
+	}
+	.avi img{
+		width: 77px;
+	}
+	.info{
+		margin-top: 0;
+		width: 70%;
+		height: 200px;
+	}
+	.h-row2{
+		display: flex;
+		position: absolute;
+		justify-content: space-between;
+		width: 90%;
+		top: 310px;
+		left: 0;
+		margin: 0 1em;
+	}
+	.h-row3{
+		position: absolute;
+		left: 0;
+		margin: 1.8em 1em 1em;
+	}
+	.h-row3 p{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 419px) {
+	.row div{
+		margin-right: 0px;
+		margin-bottom: 0px;
+		width: 31vw;
+		height: 31vw;
+	}
+}
+@media (max-width: 370px) {
+	.font-icon{
+		display: none;
+	}
+	.divider{
 		display: none;
 	}
 }
