@@ -162,7 +162,28 @@ header{
 	width: 100%;
 	height: 100%;
 }
-
+/*=================OVERLAY=================*/
+#overlay {
+  background:rgba(0,0,0,.75);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+  justify-content: center;
+  flex-direction: column;
+}
+#image-container{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	max-height: 600px;
+}
+#overlay img {
+	width: 100%;
+	height:100%;
+}
 /*=================MEDIA QUERIES=================*/
 @media (max-width: 727px) {
 	.row div{
